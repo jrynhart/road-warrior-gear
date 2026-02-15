@@ -61,7 +61,6 @@ h2 {
   padding: 15px;
   background: #CC7562;
   color: white;
-  /* margin: 50px 0; */
   margin: 0 0 50px 0;
   font-size: 1.5em
 }
@@ -94,8 +93,6 @@ article p {
 
 .hero-image-overlay {
   position: absolute;
-  /* top: -5px;
-  left: -58px; */
   top: 0;
   opacity: 1;
   z-index: 10;
@@ -123,19 +120,17 @@ article p {
   );
 }
 
+.hero-content > div {
+  position: absolute;
+  top: 50%;
+}
+
 .hero-content p:first-child {
   font-size: 4vw;
-  margin-bottom: 0.5rem;
-  margin-top: 20vh
 }
 
 .hero-content p {
   font-size: 2vw;
-  margin-bottom: 1.75rem;
-}
-
-.hero-content p {
-  font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: 1.75rem;
 }
 
@@ -202,15 +197,11 @@ article p {
   align-items: flex-start;
   column-gap: 15px;
   row-gap: 30px;
-  /* display: grid;
-  grid-template-columns: 1fr;
-  column-gap: 5%; */
 }
 
 .item {
   background: white;
   padding: 15px;
-  /* width: 20%; */
   width: 100%;
 }
 
@@ -420,23 +411,23 @@ footer {
 }
 
 .form-row {
-  display: flex; /* Stacks label and input vertically */
+  display: flex; 
   flex-direction: row;
   column-gap: 5%;
   row-gap: 5%;
-  flex-wrap: wrap; /* Allows form rows to wrap on smaller screens */
+  flex-wrap: wrap; 
   margin-bottom: 20px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Allows form groups to grow and fill available space */
+  flex: 1; 
 }
 
 label {
   font-weight: bold;
-  margin-bottom: 5px; /* Adds space between the label and the input */
+  margin-bottom: 5px; 
 }
 
 input[type="text"],
@@ -444,7 +435,7 @@ input[type="email"] {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  min-width: 150px; /* Ensures a minimum width for the inputs */
+  min-width: 150px; 
 }
 
 input[type="submit"] {
