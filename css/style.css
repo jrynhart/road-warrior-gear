@@ -94,8 +94,9 @@ article p {
 
 .hero-image-overlay {
   position: absolute;
-  top: -5px;
-  left: -58px;
+  /* top: -5px;
+  left: -58px; */
+  top: 0;
   opacity: 1;
   z-index: 10;
   width: 100%
@@ -123,21 +124,14 @@ article p {
 }
 
 .hero-content p:first-child {
-  /* font-size: clamp(1.25rem, 4vw, 1.75rem); */
-  font-size: var(--step-4);
+  font-size: 4vw;
   margin-bottom: 0.5rem;
   margin-top: 20vh
 }
 
 .hero-content p {
-  /* font-size: clamp(1rem, 2vw, 1.25rem); */
-  font-size: var(--step-3);
+  font-size: 2vw;
   margin-bottom: 1.75rem;
-}
-
-.hero-content h1 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  margin-bottom: 1rem;
 }
 
 .hero-content p {
