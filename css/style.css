@@ -515,7 +515,7 @@ input[type="submit"]:hover {
 
 @media screen and (min-width: 768px) { 
   .item {
-    width: 32%;
+    width: 31%;
   }
 
   .cart-item {
