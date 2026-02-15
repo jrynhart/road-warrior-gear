@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Road Warrior Gear</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <section class="hero">
+        <picture class="hero-image">
+          <source
+            srcset="./img/page-banner-mobile.png"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="./img/page-banner.png"
+            alt="Road warrior gear landscape hero image"
+            class="hero-image"
+          />
+        </picture>
+      </section>
+
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="shopping-cart-link">
+          <a href="shopping-cart.html" title="View Shopping Cart" >
+            <img src="./img/shopping-cart-icon-29081.png" alt="Shopping cart icon">
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="container page checkout-page">
+          <h1>Checkout</h1>
+
+          <div class="grid-layout">
+
+            <div class="checkout-form">
+              <section>
+                <div class="shipping-info">
+                  <h2>Shipping Information</h2>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="first-name">First Name</label>
+                          <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        
+
+                        <div class="form-group">
+                          <label for="last-name">Last Name</label>
+                          <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                      </div>
+                      
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="address1">Address 1</label>
+                          <input type="text" id="address1" name="address1" required>
+                        </div>
+                      </div>
+                      
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="address2">Address 2</label>
+                          <input type="text" id="address2" name="address2" required>
+                        </div>
+                      </div>
+                      
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="city">City</label>
+                          <input type="text" id="city" name="city" required>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" required>
+                        </div>
+                      </div>
+                      
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="zip">Zip Code</label>
+                          <input type="text" id="zip" name="zip" required>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="country">Country</label>
+                          <input type="text" id="country" name="country" required>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" required>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+              </section>
+              
+              <section>
+                <div class="payment-info">
+                  <h2>Payment Information</h2>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="card-number">Card Number</label>
+                          <input type="text" id="card-number" name="card-number" required>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="expiry">Expiration Date</label>
+                          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" required>
+                        </div>
+                      </div>
+                        
+                      <div class="form-row">
+                        <div class="form-group">
+                          <label for="card-name">Cardholder Name</label>
+                          <input type="text" id="card-name" name="card-name" required>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="billing-zip">Billing Zip Code</label>
+                          <input type="text" id="billing-zip" name="billing-zip" required>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+              </section>
+              
+            </div>
+
+            <section>
+              <h2>Order Summary</h2>
+              <div class="order-summary">
+                <div>
+                  <!-- <p>1x 12v Roaster with Glass Lid - $49.99</p>
+                  <p>Subtotal: $49.99</p>
+                  <p>Shipping: $5.99</p>
+                  <p>Total: $55.98</p> -->
+
+                  <table>
+                    <tr>
+                      <td>Subtotal:</td>
+                      <td>$49.99</td>
+                    </tr>
+                    <tr>
+                      <td>Shipping:</td>
+                      <td>$5.99</td>
+                    </tr>
+                    <tr>
+                      <td>Total:</td>
+                      <td>$55.98</td>
+                    </tr>
+                  </table>
+
+                  <button class="add-coupon" type="button">Click to Add Coupon</button>
+                    
+                  <button class="place-order" type="submit">Place Order</button>
+                </div>
+                
+              </div>
+            </section>
+            
+            
+          </div>
+
+      </div>
+      
+    </main>
+
+    <footer>
+      <div class="container page">
+        <p>&copy; 2026 Road Warrior Gear</p>
+      </div>
+    </footer>
+  </body>
+</html>

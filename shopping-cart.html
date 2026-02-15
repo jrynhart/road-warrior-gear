@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Road Warrior Gear</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <section class="hero">
+        <picture class="hero-image">
+          <source
+            srcset="./img/page-banner-mobile.png"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="./img/page-banner.png"
+            alt="Road warrior gear landscape hero image"
+            class="hero-image"
+          />
+        </picture>
+      </section>
+
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="shopping-cart-link">
+          <a href="shopping-cart.html" title="View Shopping Cart" >
+            <img src="./img/shopping-cart-icon-29081.png" alt="Shopping cart icon">
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="container page">
+          <h1>Shopping Cart</h1>
+
+          <section class="cart">
+            <h2>Items in Cart</h2>
+
+            <div class="cart-items">
+
+              <!-- test cart item -->
+              <div class="cart-item">
+
+                <div class="product-view">
+                  <div class="cart-item-image">
+                    <a href="#">
+                      <img src="img/12v-roaster-with-glass-lid.png" alt="12v Roaster with glass Lid"/>
+                    </a>
+                  </div>
+
+                  <div class="cart-item-details">
+                    <span class="cart-item-name">
+                      <a href="#">12v Roaster with Glass Lid</a>
+                    </span>
+                    <span class="item-detail">
+                      Supplier: Travel Buddy
+                    </span>
+                    <span class="item-detail">
+                      Estimated Delivery: 3-5 business days
+                    </span>
+                  </div>
+                </div>
+
+                <div class="price-view">
+
+                  <div class="price">
+                    <span class="label">Price:</span>
+                    <span class="item-price item-display-value">29.99</span>
+                  </div>
+                  <div class="quantity">
+                    <span class="label">Quantity:</span>
+                    <span>
+                      <input type="number" name="quantity" id="quantity" value="1" min="1" max="10"/>
+                    </span>
+                  </div>
+                  <div class="details">
+                    <span class="label">Total:</span>
+                    <span class="item-price item-display-value">29.99</span>
+                  </div>
+
+                </div>
+                
+              </div>
+              <!-- end test cart item -->
+
+              <!-- test cart item -->
+              <div class="cart-item">
+
+                <div class="product-view">
+                  <div class="cart-item-image">
+                    <a href="#">
+                      <img src="img/goal-zero-nomad-10-solar-panel.png" alt="Goal Zero Nomad 10 Solar Panel"/>
+                    </a>
+                  </div>
+
+                  <div class="cart-item-details">
+                    <span class="cart-item-name">
+                      <a href="#">Goal Zero Nomad 10 Solar Panel</a>
+                    </span>
+                    <span class="item-detail">
+                      Supplier: Goal Zero
+                    </span>
+                    <span class="item-detail">
+                      Estimated Delivery: 3-5 business days
+                    </span>
+                  </div>
+                </div>
+
+                <div class="price-view">
+
+                  <div class="price">
+                    <span class="label">Price:</span>
+                    <span class="item-price item-display-value">99.95</span>
+                  </div>
+                  <div class="quantity">
+                    <span class="label">Quantity:</span>
+                    <span>
+                      <input type="number" name="quantity" id="quantity" value="1" min="1" max="10"/>
+                    </span>
+                  </div>
+                  <div class="details">
+                    <span class="label">Total:</span>
+                    <span class="item-price item-display-value">99.95</span>
+                  </div>
+
+                </div>
+                
+              </div>
+              <!-- end test cart item -->
+
+            </div>
+          </section>
+
+          <section class="cart-totals">
+            <div class="totals-display">
+              <table>
+                <tr>
+                  <td>Subtotal:</td>
+                  <td>$129.94</td>
+                </tr>
+                <tr>
+                  <td>Shipping:</td>
+                  <td>$7.99</td>
+                </tr>
+                <tr>
+                  <td>Est. Tax:</td>
+                  <td>$15.98</td>
+                </tr>
+              </table>
+            </div>
+            <div class="grand-total-display">
+              <table>
+                <tr>
+                  <td>Grand Total:</td>
+                  <td>$153.91</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+
+          <section class="action-links">
+            <a href="index.html" class="cart-button">Continue Shopping</a>
+            <a href="checkout.html" class="cart-button">Checkout</a>
+          </section>
+
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Road Warrior Gear</p>
+      </div>
+    </footer>
+  </body>
+</html>
