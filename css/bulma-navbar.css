@@ -1,0 +1,34 @@
+.navbar {
+  background-color: #5F434B;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a.navbar-item:hover {
+    background-color: initial;
+    color: white;
+} 
+
+.navbar-dropdown {
+  background-color: #5F434B;
+}
+
+/* .navbar-item:hover {
+  background-color: #5F434B;
+} */
+
+a.navbar-link {
+  background-color: initial !important; /* important to override multiple media query styles in bulma */
+  color: white !important; 
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: white;
+}
+
+.navbar-dropdown {
+  top: 72px !important; /* Adjust this value based on the height of your navbar */
+}
