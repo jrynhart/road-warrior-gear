@@ -19,6 +19,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -193,6 +194,8 @@ article p {
 .shopping-cart-link {
   margin-left: auto;
   height: 30px;
+  position: relative;
+  top: 15px;
 }
 
 .shopping-cart-link img {

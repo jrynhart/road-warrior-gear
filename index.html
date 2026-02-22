@@ -3,8 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Road Warrior Gear</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/bulma-navbar.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,17 +47,69 @@
         </div>
       </section>
 
-      <nav class="site-nav">
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+      <nav class="navbar site-nav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
 
-        <div class="shopping-cart-link">
-          <a href="shopping-cart.html" title="View Shopping Cart" >
-            <img src="./img/shopping-cart-icon-29081.png" alt="Shopping cart icon">
-          </a>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+
+            <a class="navbar-item" href="about.html">
+              About
+            </a>
+
+            <a class="navbar-item" href="contact.html">
+              Contact
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Featured
+              </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#cooking-items">
+                  Cooking Items
+                </a>
+                <a class="navbar-item is-selected" href="#sleeping-items">
+                  Sleeping Items
+                </a>
+                <a class="navbar-item" href="#storage-solutions">
+                  Storage Solutions
+                </a>
+                <a class="navbar-item" href="#power-supplies">
+                  Power Supplies
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item shopping-cart-link">
+              <a href="shopping-cart.html" title="View Shopping Cart" >
+                <img src="./img/shopping-cart-icon-29081.png" alt="Shopping cart icon">
+              </a>
+            </div>
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -69,7 +123,7 @@
           <p>Road Warrior Gear offers a variety of products for road trips, car camping, and endless highways. We provide high-quality gear and accessories to enhance your travel experience and make your journeys more comfortable and enjoyable.</p>
         </section>
 
-        <section>
+        <section id="cooking-items">
           <h2>Cooking Items</h2>
 
           <div class="items">
@@ -151,7 +205,7 @@
           </div>
         </section>
         
-        <section>
+        <section id="sleeping-items">
           <h2>Sleeping Items</h2>
 
           <div class="items">
@@ -234,7 +288,7 @@
           </div>
         </section>
         
-        <section>
+        <section id="storage-solutions">
           <h2>Storage Solutions</h2>
 
           <div class="items">
@@ -278,7 +332,7 @@
           </div>
         </section>
 
-        <section>
+        <section id="power-supplies">
           <h2>Power Supplies</h2>
 
           <div class="items">

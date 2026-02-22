@@ -3,7 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Road Warrior Gear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bulma-navbar.css">
   </head>
 
   <body>
@@ -20,25 +22,40 @@
             class="hero-image"
           />
         </picture>
-
-        <!-- <div class="hero-content">
-          <h1>Built for the Long Road</h1>
-          <p>Gear for road trips, car camping, and endless highways.</p>
-          <a href="#shop" class="hero-button">Shop Now</a>
-        </div> -->
       </section>
 
-      <nav class="site-nav">
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+      <nav class="navbar site-nav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
 
-        <div class="shopping-cart-link">
-          <a href="shopping-cart.html" title="View Shopping Cart" >
-            <img src="./img/shopping-cart-icon-29081.png" alt="Shopping cart icon">
-          </a>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+
+            <a class="navbar-item" href="about.html">
+              About
+            </a>
+
+            <a class="navbar-item" href="contact.html">
+              Contact
+            </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item shopping-cart-link">
+              <a href="shopping-cart.html" title="View Shopping Cart" >
+                <img src="./img/shopping-cart-icon-29081.png" alt="Shopping cart icon">
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
