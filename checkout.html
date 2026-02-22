@@ -3,8 +3,18 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Road Warrior Gear</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <link href="./css/bulma-calendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
+
+  <style>
+    .datetimepicker-clear-button {
+      display: none
+    }
+  </style>
 
   <body>
     <header>
@@ -122,7 +132,7 @@
 
                         <div class="form-group">
                           <label for="expiry">Expiration Date</label>
-                          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                          <input type="date" id="expiry" name="expiry" placeholder="MM/YY" required onclick="clearDatepickerValue()">
                         </div>
 
                         <div class="form-group">
@@ -192,5 +202,25 @@
         <p>&copy; 2026 Road Warrior Gear</p>
       </div>
     </footer>
+
+    <script src="./js/bulma-calendar.min.js"></script>
+
+    <script>
+      bulmaCalendar.attach('#expiry', {
+        type: 'date',
+        dateFormat: 'MM/YY',
+        showFooter: false,
+        showHeader: false,
+        displayMode: 'default',
+        minDate: new Date(),
+      });
+    </script>
+
+    <script>
+      function clearDatepickerValue() {
+        const datepickerInput = document.getElementById('expiry');
+        datepickerInput.value = '';
+      }
+    </script>
   </body>
 </html>

@@ -57,7 +57,17 @@ h1 {
   font-size: 2em;
 }
 
+/* remove when page section heading is implemented */
 h2 {
+  padding: 15px;
+  background: #CC7562;
+  color: white;
+  margin: 0 0 50px 0;
+  font-size: 1.5em
+}
+
+/* add this class wherever there is h2 now */
+.page-section-heading {
   padding: 15px;
   background: #CC7562;
   color: white;
