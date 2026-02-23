@@ -8,23 +8,23 @@
 }
 
 .navbar a.navbar-item:hover {
-    background-color: initial;
-    color: white;
+  background-color: initial;
+  color: white;
 } 
 
 .navbar-dropdown {
   background-color: #5F434B;
 }
 
-/* .navbar-item:hover {
-  background-color: #5F434B;
-} */
-
 a.navbar-link {
   background-color: initial !important; /* important to override multiple media query styles in bulma */
   color: white !important; 
 }
 
+a.navbar-item:hover {
+  text-decoration: underline;
+}
+
 .navbar-link:not(.is-arrowless)::after {
-    border-color: white;
+  border-color: white;
 }
