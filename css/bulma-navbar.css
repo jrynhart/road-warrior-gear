@@ -28,7 +28,3 @@ a.navbar-link {
 .navbar-link:not(.is-arrowless)::after {
     border-color: white;
 }
-
-.navbar-dropdown {
-  top: 72px !important; /* Adjust this value based on the height of your navbar */
-}
