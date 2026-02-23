@@ -1,12 +1,17 @@
-1. Datepicker: Bulma component
-- Added to the shopping cart page, visible after the credit card form 'expiration date' box is clicked
-- Code retrieved from: https://bulma-calendar.onrender.com/demonstration/datetime#range-selection
-
-2. Tooltip: ChatGPT
+1. Tooltip: ChatGPT
 - Used ChatGPT to get html and css for a basic on-hover tooltip box, using a css transition when displayed
 - Code retrieved from: https://chatgpt.com/c/6998fdb7-b4bc-83e8-9ac2-5944c1d85dd2
 
-3. Nav Menu: Bulma
+2. Datepicker: Bulma component
+- Added to the shopping cart page, visible after the credit card form 'expiration date' box is clicked
+- Code retrieved from: https://bulma-calendar.onrender.com/demonstration/datetime#range-selection
+
+3. Button elements: Bulma
+- Converted buttons on checkout page to Bulma buttons
+- Code retrieved from: https://bulma.io/documentation/elements/button/
+
+4. Nav Menu: Bulma
 - Implemented the Bulma navigation bar 
 - Added a dropdown menu to navigate to featured item sections on the homepage
 - Code retrieved from: https://bulma.io/documentation/components/navbar/
+
