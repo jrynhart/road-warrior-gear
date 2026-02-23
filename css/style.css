@@ -64,7 +64,8 @@ h2 {
   background: #CC7562;
   color: white;
   margin: 0 0 50px 0;
-  font-size: 1.5em
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 /* add this class wherever there is h2 now */
