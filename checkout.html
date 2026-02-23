@@ -152,7 +152,7 @@
 
                         <div class="form-group">
                           <label for="expiry">Expiration Date</label>
-                          <input type="date" id="expiry" name="expiry" placeholder="MM/YY" required onclick="clearDatepickerValue()">
+                          <input type="date" id="expiry" name="expiry" class="input bulmaCalendar" required onclick="clearDatepickerValue()" style="flex-flow: column;">
                         </div>
 
                         <div class="form-group">
@@ -182,10 +182,6 @@
               <h2>Order Summary</h2>
               <div class="order-summary">
                 <div>
-                  <!-- <p>1x 12v Roaster with Glass Lid - $49.99</p>
-                  <p>Subtotal: $49.99</p>
-                  <p>Shipping: $5.99</p>
-                  <p>Total: $55.98</p> -->
 
                   <table>
                     <tr>
@@ -225,18 +221,14 @@
       </div>
     </footer>
 
+    <!-- bulma calendar -->
     <script src="./js/bulma-calendar.min.js"></script>
-
     <script>
-      bulmaCalendar.attach('#expiry', {
-        type: 'date',
-        dateFormat: 'MM/YY',
-        showFooter: false,
-        showHeader: false,
-        displayMode: 'default',
-        minDate: new Date(),
+      ready(function () {
+        bulmaCalendar.attach('.bulmaCalendar');
       });
     </script>
+    <!-- end bulma calendar -->
 
     <script>
       function clearDatepickerValue() {
