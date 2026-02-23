@@ -234,8 +234,9 @@ article p {
 }
 
 .item-image {
-  height: auto;
+  height: 230px;
   width: 95%;
+  overflow: hidden;
   margin-inline: auto;
   transition-property: width;
   transition-duration: 500ms;
@@ -477,6 +478,7 @@ input[type="submit"]:hover {
   border-radius: 4px;
   cursor: pointer;
   display: block;
+  width: 100%;
 }
 
 .order-summary button.add-coupon {
