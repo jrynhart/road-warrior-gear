@@ -45,8 +45,9 @@ main {
   margin-bottom: 3.125rem;
 }
 
-.home-page h1,
-.purchase-confirmation-page h1 {
+/* .home-page h1,
+.purchase-confirmation-page h1 { */
+.hide-heading {
   font-size: initial;
   position: absolute;
   left: -9999px;
