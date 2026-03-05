@@ -166,7 +166,11 @@ article p {
   max-width: min(80%, 1200px);
   margin-inline: auto;
   margin-top: 20px;
-  font-size: 1.1rem;
+}
+
+.site-description p {
+  font-size: 1.25rem;
+  line-height: 1.4em;
 }
 
 .site-nav {
