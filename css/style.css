@@ -23,10 +23,11 @@ html {
 }
 
 body {
-  font:
+  /* font:
     1em "math",
     "Arial",
-    sans-serif;
+    sans-serif; */
+  font-family: "Montserrat", sans-serif;
   color: #181818;
 }
 
