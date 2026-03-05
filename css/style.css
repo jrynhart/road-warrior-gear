@@ -146,6 +146,7 @@ article p {
 .hero-content p {
   font-size: 2vw;
   margin-bottom: 4vw;
+  font-family: fantasy;
 }
 
 .hero-button {
@@ -155,6 +156,8 @@ article p {
   text-decoration: none;
   font-weight: 600;
   border-radius: 999px;
+  position: relative;
+  z-index: 10;
 }
 /* end hero overlay content */
 /* end HERO 1 */
