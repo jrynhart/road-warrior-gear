@@ -228,7 +228,10 @@ article p {
   font-size: var(--step-0);
   margin-bottom: 15px;
   font-weight: bold;
-  height: 4vw;
+  /* height: 4vw; */
+  height: 52px;
+  overflow: hidden;
+  line-height: 1.4em;
 }
 
 .item-name > a {
@@ -246,6 +249,7 @@ article p {
   width: 95%;
   overflow: hidden;
   margin-inline: auto;
+  margin-bottom: 20px;
 }
 
 .item-image img {
@@ -268,7 +272,8 @@ article p {
   -webkit-line-clamp: 7;
   overflow: hidden;
   line-height: 1.5em;
-  height: 180px;
+  /* height: 180px; */
+  height: 174px;
   font-size: var(--step--1);
 }
 
