@@ -245,7 +245,7 @@ article p {
 }
 
 .item-image {
-  height: 230px;
+  height: 17vh;
   width: 95%;
   overflow: hidden;
   margin-inline: auto;
@@ -306,7 +306,8 @@ article p {
 }
 
 .item-card {
-  flex: 0 0 calc((100% - 60px) / 4); /* 4 images visible */
+  /* flex: 0 0 calc((100% - 60px) / 1);  */
+  flex: 0 0 calc((100% - 0px) / 1);
   scroll-snap-align: start;
   border-radius: 12px;
   overflow: hidden;
@@ -607,6 +608,10 @@ input[type="submit"]:hover {
     width: 31%;
   }
 
+  .item-card {
+    flex: 0 0 calc((100% - 13px) / 2);
+  }
+
   .cart-item {
     grid-template-columns: 1fr 1fr;
   }
@@ -621,8 +626,26 @@ input[type="submit"]:hover {
     width: 23%;
   }
 
+  .item-card {
+    flex: 0 0 calc((100% - 33px) / 3);
+  }
+
   .container {
     max-width: min(90vw, 1080px);
+  }
+}
+
+@media screen and (min-width: 1100px) { 
+  .item {
+    width: 20%;
+  }
+
+  .item-card {
+    flex: 0 0 calc((100% - 60px) / 4);
+  }
+
+  .container {
+    max-width: min(90vw, 1300px);
   }
 }
 
