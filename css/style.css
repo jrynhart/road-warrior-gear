@@ -1,5 +1,8 @@
 /* @link https://utopia.fyi/type/calculator?c=360,18,1.2,1240,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
+@import "tooltip.css";
+@import "discounted-items.css";
+
 :root {
   --step--2: clamp(0.7813rem, 0.7572rem + 0.1068vw, 0.84rem);
   --step--1: clamp(0.9375rem, 0.8915rem + 0.2045vw, 1.05rem);
@@ -157,6 +160,11 @@ article p {
 /* end hero overlay content */
 /* end HERO 1 */
 
+.light-font {
+  color: #5F434B;
+  /* color: #353535; */
+}
+
 .site-description {
   max-width: min(80%, 1200px);
   margin-inline: auto;
@@ -166,6 +174,7 @@ article p {
 .site-description p {
   font-size: 1.25rem;
   line-height: 1.4em;
+  font-weight: bold;
 }
 
 .site-nav {
@@ -283,6 +292,8 @@ article p {
 
 .home-page .item-price {
   font-size: 1.25rem;
+  color: darkgreen;
+  font-weight: bold;
 } 
 
 .item-price::before {
@@ -615,6 +626,8 @@ input[type="submit"]:hover {
 
   .item-name {
     height: 6vw;
+    /* height: max(6vw, 80px); */
+    max-height: 80px;
   }
 
   .item-image {
